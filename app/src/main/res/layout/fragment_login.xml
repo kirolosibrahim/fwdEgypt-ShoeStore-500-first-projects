@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="login"
+            type="com.udacity.shoestore.ui.login.LoginFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.login.LoginFragment">
+
+        <TextView
+            android:id="@+id/login_textview"
+            style="@style/text_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/wide_margin"
+            android:layout_marginTop="32dp"
+            android:text="@string/login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/email_editText"
+            style="@style/input_text_style"
+            android:layout_margin="@dimen/wide_margin"
+            android:autofillHints=""
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_textview" />
+
+        <EditText
+            android:id="@+id/password_editText"
+            style="@style/input_text_style"
+            android:layout_margin="@dimen/wide_margin"
+            android:autofillHints=""
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_editText" />
+
+        <Button
+            android:id="@+id/register_button"
+            style="@style/button_style"
+            android:layout_marginStart="@dimen/wide_margin"
+            android:layout_marginTop="@dimen/wide_open_margin"
+            android:text="@string/register"
+            app:layout_constraintEnd_toStartOf="@+id/login_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_editText" />
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/button_style"
+            android:layout_marginEnd="@dimen/wide_margin"
+            android:text="@string/login"
+            app:layout_constraintBaseline_toBaselineOf="@+id/register_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/register_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

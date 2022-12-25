@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+
+    <string name="welcome">Welcome Screen</string>
+    <string name="illustration">Illustration Screen</string>
+    <string name="shoelist">Shoe List Screen</string>
+
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="title_activity_login">Login Activity</string>
+    <string name="welcome_to_our_app">Welcome To Our APP</string>
+
+    <string name="welcome_to_our_app_text">welcome to our app text</string>
+    <string name="instruction_title">Instruction Screen</string>
+    <string name="instruction_body">Instructions Body</string>
+    <string name="skip">SKIP</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="shoe_name">Nike Air</string>
+    <string name="shoe_size">45.5</string>
+    <string name="name">name</string>
+    <string name="size">Size</string>
+    <string name="company">Company</string>
+    <string name="description">Descripton</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>
